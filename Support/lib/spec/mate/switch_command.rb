@@ -30,10 +30,12 @@ module Spec
                 path = path.gsub(/\/lib\//, "/spec/")
               end
               path = path.gsub(/\.rb$/, "_spec.rb")
+              path = path.gsub(/\.haml$/, ".haml_spec.rb")
               path = path.gsub(/\.erb$/, ".erb_spec.rb")
               path = path.gsub(/\.rhtml$/, ".rhtml_spec.rb")
             when 'spec' then
               path = path.gsub(/\.rhtml_spec\.rb$/, ".rhtml")
+              path = path.gsub(/\.haml_spec\.rb$/, ".haml")
               path = path.gsub(/\.erb_spec\.rb$/, ".erb")
               path = path.gsub(/_spec\.rb$/, ".rb")
               if rails?(prefix)
