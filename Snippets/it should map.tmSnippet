@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string># ${1:index|show|new|create|edit|update|destroy}
+it "should map { :controller =&gt; '$2', :action =&gt; '$3'${4:, :id =&gt; 1} } to $5" do
+  route_for(:controller =&gt; '$2', :action =&gt; '$3'$4).should == '$5'
+end</string>
+	<key>name</key>
+	<string>it should map</string>
+	<key>scope</key>
+	<string>source.ruby.rspec</string>
+	<key>tabTrigger</key>
+	<string>itsmap</string>
+	<key>uuid</key>
+	<string>322E3DE3-31CD-4273-95B8-483ECDCA4C3B</string>
+</dict>
+</plist>
