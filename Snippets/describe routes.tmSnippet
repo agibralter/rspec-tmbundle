@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>describe "routes for" do
+  # index
+  it "should map { :controller =&gt; '$1', :action =&gt; 'index' } to /$1" do
+    route_for(:controller =&gt; '$1', :action =&gt; 'index').should == '/$1'
+  end
+  # show
+  it "should map { :controller =&gt; '$1', :action =&gt; 'show', :id =&gt; 1 } to /$1/1" do
+    route_for(:controller =&gt; '$1', :action =&gt; 'show', :id =&gt; 1).should == '/$1/1'
+  end
+  # new
+  it "should map { :controller =&gt; '$1', :action =&gt; 'new' } to /$1/new" do
+    route_for(:controller =&gt; '$1', :action =&gt; 'new').should == '/$1/new'
+  end
+  # create
+  it "should map { :controller =&gt; '$1', :action =&gt; 'create' } to /$1" do
+    route_for(:controller =&gt; '$1', :action =&gt; 'create').should == '/$1'
+  end
+  # edit
+  it "should map { :controller =&gt; '$1', :action =&gt; 'edit', :id =&gt; 1 } to /$1/1/edit" do
+    route_for(:controller =&gt; '$1', :action =&gt; 'edit', :id =&gt; 1).should == '/$1/1/edit'
+  end
+  # update
+  it "should map { :controller =&gt; '$1', :action =&gt; 'update', :id =&gt; 1 } to /$1/1" do
+    route_for(:controller =&gt; '$1', :action =&gt; 'update', :id =&gt; 1).should == '/$1/1'
+  end
+  # destroy
+  it "should map { :controller =&gt; '$1', :action =&gt; 'destroy', :id =&gt; 1 } to /$1/1" do
+    route_for(:controller =&gt; '$1', :action =&gt; 'destroy', :id =&gt; 1).should == '/$1/1'
+  end
+end
+</string>
+	<key>name</key>
+	<string>describe routes</string>
+	<key>tabTrigger</key>
+	<string>desroutes</string>
+	<key>uuid</key>
+	<string>AA9DC43B-555F-4031-A7CC-24C1B26B5516</string>
+</dict>
+</plist>

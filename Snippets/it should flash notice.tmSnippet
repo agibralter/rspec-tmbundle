@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>it "should flash notice" do
+  ${1:do_get|do_post}
+  flash[:notice].should_not be_nil
+end</string>
+	<key>name</key>
+	<string>it should flash notice</string>
+	<key>tabTrigger</key>
+	<string>itsnote</string>
+	<key>uuid</key>
+	<string>3BCCEF21-E732-41B6-B1B0-30C259EA86CF</string>
+</dict>
+</plist>
