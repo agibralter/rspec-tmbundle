@@ -3,14 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>it "should flash notice" do
-  ${1:do_get|do_post}
+	<string>specify {
+  do_action${1:(:id =&gt; 1)}
   flash[:notice].should_not be_nil
-end</string>
+}</string>
 	<key>name</key>
-	<string>it should flash notice</string>
+	<string>spec should flash notice</string>
 	<key>tabTrigger</key>
-	<string>itsnote</string>
+	<string>spshn</string>
 	<key>uuid</key>
 	<string>3BCCEF21-E732-41B6-B1B0-30C259EA86CF</string>
 </dict>
