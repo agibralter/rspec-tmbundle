@@ -37,7 +37,6 @@ module Spec
               if framework.rails? || framework.merb?
                 path = path.gsub(/\/app\//, "/spec/")
                 path = path.gsub(/\/lib\//, "/spec/lib/")
-                path = path.gsub(/application\.rb/, 'application_controller.rb')
               else
                 path = path.gsub(/\/lib\//, "/spec/")
               end
@@ -57,7 +56,6 @@ module Spec
               if framework.rails? || framework.merb?
                 path = path.gsub(/\/spec\/lib\//, "/lib/")
                 path = path.gsub(/\/spec\//, "/app/")
-                path = path.gsub(/application_controller\.rb/, 'application.rb')
               else
                 path = path.gsub(/\/spec\//, "/lib/")
               end
